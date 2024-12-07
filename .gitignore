@@ -1,3 +1,4 @@
+# Ignore IntelliJ IDEA specific files
 *.iml
 .gradle
 /local.properties
@@ -7,9 +8,18 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+# macOS specific files
 .DS_Store
+
+# Build output
 /build
 /captures
 .externalNativeBuild
 .cxx
+
+# Local properties file (contains local configuration)
 local.properties
+
+# Large file exclusion
+app/jdk-17.0.11_windows-x64_bin.exe
