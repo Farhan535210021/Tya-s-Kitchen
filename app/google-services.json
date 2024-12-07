@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917477682173",
+    "project_id": "umkm-tya-s-kitchen",
+    "storage_bucket": "umkm-tya-s-kitchen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917477682173:android:fc4dbf096d308bf5a6c794",
+        "android_client_info": {
+          "package_name": "com.example.foodapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFlrb81b7wDCeX3sYSQVqUh85mDWpCAuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

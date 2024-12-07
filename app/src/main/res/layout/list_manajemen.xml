@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Gambar Produk -->
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Product image" />
+
+        <!-- Nama Produk -->
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_product"
+            android:layout_marginStart="12dp"
+            android:text="Nama Produk"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins" />
+
+        <!-- Harga Produk -->
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_name"
+            android:layout_toEndOf="@id/img_product"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Rp 0"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins" />
+        <TextView
+            android:id="@+id/tv_categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_price"
+            android:layout_toEndOf="@id/img_product"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Categorie"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins" />
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_categorie"
+            android:layout_toEndOf="@id/img_product"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:text="Description"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins" />
+
+        <!-- Tombol Edit Produk -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit_product"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Edit"
+            app:cornerRadius="10dp"
+            app:strokeWidth="2dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/primary"
+            app:strokeColor="@color/primary"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/btn_delete_product"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/baseline_delete_24"
+            android:contentDescription="Delete Product"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="0dp" />
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
